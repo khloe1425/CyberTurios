@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        display: flex;
+    }
+    &__item{
+        list-style: none;
+        display: inline-block;
+    }
+}

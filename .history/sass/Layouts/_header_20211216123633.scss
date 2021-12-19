@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $secondary;
+    padding: $pd-1;
+    color: $white;
+    &__left{    
+        display: flex;
+        align-items: center;
+    }
+    &__categories{
+        margin-left: $mg-1;
+    }
+    &__menu{
+        margin: 0;
+    }
+    &__item{
+        list-style: none;
+        display: inline-block;
+    }
+    &__link{
+        color: $white;
+        text-decoration: none;
+    }
+    &__logo{
+        width: 170px;
+    }
+}

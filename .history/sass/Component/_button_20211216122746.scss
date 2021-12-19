@@ -1,0 +1,9 @@
+.btn{
+    color: $white;
+}
+.header__btn{
+    @include button($pd-2, $pd-3, $fz-1, $white, $blue-2);
+    &:hover{
+        @include background-color($bg-color-1);
+    }
+}

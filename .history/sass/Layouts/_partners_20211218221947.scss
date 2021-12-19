@@ -1,0 +1,9 @@
+.partners{
+    &__header{
+        display: flex;
+        justify-content: center;
+        .intro__content{
+            flex-direction: column;
+        }
+    }
+}

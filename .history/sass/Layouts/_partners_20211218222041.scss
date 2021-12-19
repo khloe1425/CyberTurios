@@ -1,0 +1,14 @@
+.partners{
+    &__header{
+        display: flex;
+        justify-content: center;
+        .intro__content{
+            flex-direction: column;
+            text-align: center;
+        }
+        .intro__item:first-child{
+            padding: 0;
+            border: none;
+        }
+    }
+}

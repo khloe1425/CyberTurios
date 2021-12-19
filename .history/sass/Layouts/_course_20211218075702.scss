@@ -1,0 +1,13 @@
+.course{
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+    &__item{
+        text-align: center;
+    }
+    &__img{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,26 @@
+.feedback{
+    margin-top: 90px;
+    &__top{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        i{
+            font-size: 22px;
+            color: $primary;
+        }
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+    }
+    &__text{
+        font-size: 20px;
+        line-height: 32px;
+        color: $gray;
+    }
+    &__author{
+        width: 70px !important;
+        height: 70px;
+        border-radius: 50%;
+    }
+}

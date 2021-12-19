@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./set02.css">
+    <title>Register</title>
+
+    <script>
+        function reFrm() {
+            // alert("Hello World")
+            var sfullName = document.getElementById("fullName").value;
+            var refullName = /^[A-Za-z ]{3,30}$/;
+            if (!refullName.test(sfullName)) {
+                alert("Full name cannot be left blank!");
+                document.getElementById("fullName").focus();
+                return false;
+            }
+
+            var slastName = document.getElementById("lastName").value;
+            var relastName = /^[A-Za-z ]{3,30}$/;
+            if (!relastName.test(slastName)) {
+                alert("Last name cannot be left blank!");
+                document.getElementById("lastName").focus();
+                return false;
+            }
+
+            var sEmail = document.getElementById("txtEmail").value;
+            var reEmail = /^\w+[@]\w+[.]\w{3}+([.]\w{2})?$/;
+            if (!reEmail.test(sEmail)) {
+                alert("Email cannot be left blank!");
+                document.getElementById("txtEmail").focus();
+                return false;
+            }
+
+            var sPhone = document.getElementById("txtPhone").value;
+            var rePhone = /^[0,9]{8,12}$/;
+            if (!rePhone.test(sPhone)) {
+                alert("Phone no. cannot be left blank!");
+                document.getElementById("txtPhone").focus();
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="Logo">Logo</div>
+        <div class="navbar">
+            <a href="./index.html">Homepage</a>
+            <a href="#">Utilities</a>
+            <a href="#">Share</a>
+            <a href="#">Knowledge</a>
+            <a href="./register.html">Register</a>
+            <a href="#">Login</a>
+            <a href="#">About Us</a>
+        </div>
+    </header>
+    <section>
+        <h1 align="center" style="font-weight: 400; font-size: 2em;">Register Form</h1>
+
+        <form onsubmit="return reFrm()">
+            <div class="form-item"><span>Full name:</span>
+                <input type="text" autofocus tabindex="1" placeholder="Enter full name" id="fullName">
+            </div> <br>
+            <div class="form-item"><span>Last name:</span>
+                <input type="text" tabindex="2" placeholder="Enter last name" id="lastName">
+            </div> <br>
+            <div class="form-item"><span>Country:</span>
+                <select tabindex="3" id="country">
+                    <option selected>Vietnam</option>
+                    <option>Laos</option>
+                    <option>Cambodia</option>
+                    <option>Thailand</option>
+                </select>
+            </div> <br>
+            <div><span class="gender">Gender:</span>
+                <input type="radio" name="rdSex" checked tabindex="4">Male
+                <input type="radio" name="rdSex" tabindex="5">Female
+            </div> <br>
+            <div class="form-item"><span>Email:</span> <input type="email" id="txtEmail" placeholder="Enter email">
+            </div> <br>
+            <div class="form-item"><span>Phone:</span> <input type="number" id="txtPhone" placeholder="Enter phone">
+            </div> <br>
+            <div class="form-item"><input type="submit" value="Register" name="regBtn">
+                <input type="reset" value="Reset" name="resetBtn">
+            </div>
+
+        </form>
+
+    </section>
+    <footer>
+        &copy; By Me 2021. All rights reserved
+    </footer>
+</body>
+
+</html>

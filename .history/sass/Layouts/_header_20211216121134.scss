@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary;
+    &__left{
+        display: flex;
+    }
+    &__item{
+        list-style: none;
+        display: inline-block;
+    }
+    &__link{
+        text-decoration: none;
+        color: $white;
+    }
+}

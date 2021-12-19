@@ -1,0 +1,12 @@
+.btn{
+    color: $white;
+    &:focus{
+        box-shadow: none;
+    }
+}
+.header__btn{
+    @include button($pd-2, $pd-3 - 3px, $fz-1, $white, $blue-2, $bdr-1);
+    &:hover{
+        @include background-color($blue-2, $white);
+    }
+}

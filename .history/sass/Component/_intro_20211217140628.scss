@@ -1,0 +1,40 @@
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+    &__button{
+        font-weight: 500;
+        @include button(33px, 14px, 14px, $white, $primary, 40px);
+        transition: all .5s;
+        text-transform: uppercase;
+        i{
+            margin-right: 5px;
+        }
+    }
+    &__title{
+        color: #777;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0 0 15px;
+    }
+    &__topic{
+        font-size: 36px;
+        color: $black;
+        font-weight: 500;
+        letter-spacing: -.42px;
+    }
+    &__item{
+        &:first-child{
+            padding-right: 40px;
+            border-right: 1px solid $gray-3;
+        }
+        &:last-child{
+            padding-left: 40px;
+            width: 325px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.banner{
+    &__content{
+        text-align: center;
+    }
+    &__heading{
+        font-family: "Roboto";
+        @include fontSize(64px, $black, 700);
+        letter-spacing: -.64px;
+    }
+}

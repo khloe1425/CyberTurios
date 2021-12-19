@@ -1,0 +1,9 @@
+.instructor{
+    &__avatar{
+        width: 255px;
+        height: 255px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $primary;
+    }
+}

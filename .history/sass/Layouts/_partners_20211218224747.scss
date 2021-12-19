@@ -1,0 +1,57 @@
+.partners {
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+    .intro__content {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+    .intro__item:first-child {
+      padding: 0;
+      border: none;
+    }
+    .intro__item:last-child p {
+      max-width: 545px;
+    }
+  }
+  &__item {
+    img {
+      height: 100px;
+      margin: 0 auto;
+      filter: grayscale(100%);
+      transition: all 0.25s;
+    }
+    &:hover {
+      img {
+        filter: grayscale(0%);
+      }
+    }
+    &.num--1 {
+      img {
+        width: 93px;
+      }
+    }
+    &.num--2 {
+      img {
+        width: 97px;
+      }
+    }
+    &.num--3 {
+      img {
+        width: 87px;
+      }
+    }
+    &.num--4 {
+      img {
+        width: 146px;
+      }
+    }
+    &.num--5 {
+      img {
+        width: 110px;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.btn{
+    color: $white;
+}
+.header__btn{
+    @include button($pd-2, $p3, $fz-1, $white, $blue-2);
+}

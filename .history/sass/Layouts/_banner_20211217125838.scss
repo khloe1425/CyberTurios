@@ -1,0 +1,65 @@
+.banner{
+    background-image: url("../../images/banner_bg.png");
+    background-size: cover;
+    background-position: bottom center;
+    height: 880px;
+    position: relative;
+    &__content{
+        text-align: center;
+    }
+    &__heading{
+        padding-top: 130px;
+        font-family: "Roboto";
+        @include fontSize(64px, $black, 700);
+        letter-spacing: -.64px;
+    }
+    &__desc{
+        max-width: 680px;
+        margin: 15px auto 30px;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 30px;
+        color: $gray;
+        letter-spacing: -.18px;
+    }
+    &__item{
+        position: absolute;
+        bottom: 0;
+        &--1{
+            right: 8%;
+            transform: translateY(40%);
+        }
+        &--3{
+            right: 23%;
+            bottom: 21%;
+        }
+        &--4{
+            right: 26%;
+            bottom: 21%;
+        }
+        &--8{
+            right: 20%;
+        }
+        &--9{
+            left: 50%;
+        }
+        &--10{
+            left: 35%;
+        }
+        &--11{
+            bottom: 25%;
+            left: 18%;
+        }
+        &--12{
+            left: 20%;
+        }
+        &--13{
+            left: 21%;
+            bottom: 6%;
+        }
+        &--14{
+            left: 8%;
+            transform: translateY(70%);
+        }
+    }
+}

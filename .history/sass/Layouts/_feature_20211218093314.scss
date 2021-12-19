@@ -1,0 +1,154 @@
+.feature{
+    background-color: #f4f8ff;
+    background-image: url("../../images/course_bg.png");
+    background-size: cover;
+    background-position: bottom center;
+    padding: 100px 0;
+    &__search{
+        display: flex;
+        justify-content: center;
+    }
+    &__menu{
+        list-style-type: none;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 15px 25px 0 rgba(51,51,51, 0.05)
+    }
+    &__filter{
+        position: relative;
+        display: inline-block;
+        padding: 18px 30px;
+        font-size: 17px;
+        cursor: pointer;
+        line-height: 45px;
+            &:not(:last-child){
+            &::before{
+                content: "";
+                width: 1px;
+                height: 25px;
+                background-color: $gray-3;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__course{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-top: 33px;
+    }
+    &__item{
+        background-color: $white;
+        border-radius: 15px;
+        padding: 45px 50px 0;
+        position: relative;
+        height: 500px;
+        a{
+            display: block;
+        }
+        &:hover{
+            background-color: $primary;
+            a{
+                color: white;
+            }
+            .feature__category::before{
+                background-color: $white;
+            }
+        }
+    }
+    &__category{
+        font-size: 14px;
+        color: $gray;
+        letter-spacing: -.14px;
+        position: relative;
+        padding-left: 16px;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background-color: $primary;
+            border-radius: 50%;
+            transition: all .4s;
+        }
+        &:hover{
+            color: inherit;
+        }
+    }
+    &__title{
+        font-size: 24px;
+        color: $black;
+        line-height: 30px;
+        letter-spacing: -.24px;
+        font-family: "Roboto";
+        font-weight: 700;
+        margin-top: 10px;
+        &:hover{
+            color: inherit;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        padding: 0 50px;
+        left: 0;
+        bottom: 0;
+    }
+    &__area{
+        opacity: 0;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 20px 0;
+    }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img{
+            width: 50px;
+        }
+    }
+    &__hidden{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        padding: 0 50px;
+        width: 100%;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        span{
+            color: $gray;
+        }
+    }
+    &__star{
+        font-size: 12px;
+        color: #FF912D;
+    }
+    &__price{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+    }
+}

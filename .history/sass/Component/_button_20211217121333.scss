@@ -1,0 +1,29 @@
+.btn{
+    color: $white;
+    &:focus{
+        box-shadow: none;
+    }
+}
+.header__btn{
+    text-transform: uppercase;
+    font-weight: 400;
+    @include button(20px, 10px, 12px, $white, $blue-2, 0);
+    &:hover{
+        @include background-color($blue-2, $white);
+    }
+    i{
+        margin-right: 5px;
+    }
+}
+.banner{
+    &__button{
+        @include button(30px, 14px, 14px, $white, $primary, 40px);
+    }
+    &__get{
+        margin-right: 35px;
+    }
+    &__start{
+        background-color: white;
+        color: $black;
+    }
+}   

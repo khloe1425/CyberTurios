@@ -1,0 +1,14 @@
+.instructor{
+    &__avatar{
+        width: 255px;
+        height: 255px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #C1F3E5;
+    }
+    &__name{
+        font-size: 24px;
+        font-family: "Roboto";
+        color: $black;
+    }
+}

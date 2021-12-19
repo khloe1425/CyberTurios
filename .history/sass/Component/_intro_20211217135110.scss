@@ -1,0 +1,15 @@
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+    &__button{
+        font-weight: 500;
+        @include button(33px, 14px, 14px, $white, $primary, 40px);
+        transition: all .5s;
+        text-transform: uppercase;
+    }
+}

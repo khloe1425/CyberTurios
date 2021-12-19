@@ -1,0 +1,18 @@
+.partners{
+    &__header{
+        display: flex;
+        justify-content: center;
+        .intro__content{
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+        .intro__item:first-child{
+            padding: 0;
+            border: none;
+        }
+        .intro__item:last-child p {
+            max-width: 545px;
+        }
+    }
+}

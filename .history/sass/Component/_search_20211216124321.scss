@@ -1,0 +1,9 @@
+.header{
+    &__search{
+    border: 1px solid $gray-2;
+    padding: $pd-4;
+    }
+    &__input{
+        background-color: $bg-color-1;
+    }
+}

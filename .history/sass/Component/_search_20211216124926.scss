@@ -1,0 +1,16 @@
+.header{
+    &__search{
+    border: 1px solid $gray-2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    i{
+        
+    }
+    }
+    &__input{
+        background-color: $bg-color-1;
+        border: $bd-1;
+    }
+}

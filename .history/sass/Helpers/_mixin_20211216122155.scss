@@ -1,0 +1,6 @@
+@mixin button($px, $py, $fz, $color, $bg){
+    padding: $py $px;
+    font-size: $fz;
+    color: $color;
+    background-color: $bg;
+}

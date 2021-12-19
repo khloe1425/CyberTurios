@@ -1,0 +1,20 @@
+.header{
+    &__search{
+    border: 1px solid $gray-2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: $pd-5;
+    i{
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+    }
+    }
+    &__input{
+        background-color: $bg-color-1;
+        border: $bd-1;
+    }
+}

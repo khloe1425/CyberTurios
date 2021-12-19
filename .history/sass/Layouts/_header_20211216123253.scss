@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary;
+    padding: $pd-1;
+    color: $white;
+    &__left{    
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        list-style: none;
+        display: inline-block;
+    }
+    &__link{
+        text-decoration: none;
+    }
+    
+}

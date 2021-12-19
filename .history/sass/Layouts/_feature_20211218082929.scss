@@ -1,0 +1,10 @@
+.feature{
+    &__menu{
+        width: auto;
+        margin: 0 auto;
+        list-style-type: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+}

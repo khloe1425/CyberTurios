@@ -1,0 +1,36 @@
+.header{
+    background-color: $secondary;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $pd-7 - 2 0;
+        color: $white;
+    }
+    &__left{    
+        display: flex;
+        align-items: center;
+    }
+    &__categories{
+        margin-left: $mg-1;
+        margin-right: $mg-2;
+    }
+    &__menu{
+        margin: 0;
+    }
+    &__item{
+        list-style: none;
+        display: inline-block;
+    }
+    &__link{
+        font-family: "Roboto";
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: $fz-2;
+        font-weight: 500;
+    }
+    &__logo{
+        width: 170px;
+    }
+}

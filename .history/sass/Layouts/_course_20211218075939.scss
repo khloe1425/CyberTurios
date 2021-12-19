@@ -1,0 +1,19 @@
+.course{
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+    &__item{
+        text-align: center;
+        border-radius: 10px;
+        border: 1px dashed $gray-4;
+        padding: 40px 35px 10px 35px;
+    }
+    &__img{
+        display: inline-block;
+    }
+    &__job{
+        font-size: 22px;
+    }
+}

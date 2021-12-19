@@ -1,0 +1,9 @@
+.course{
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__item{
+        text-align: center;
+    }
+}

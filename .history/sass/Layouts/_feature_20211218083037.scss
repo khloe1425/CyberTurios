@@ -1,0 +1,13 @@
+.feature{
+    &__search{
+        display: flex;
+        justify-content: center;
+    }
+    &__menu{
+        list-style-type: none;
+        background-color: white;
+    }
+    &__item{
+        display: inline-block;
+    }
+}

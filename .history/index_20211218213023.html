@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONT GOOGLE -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Rubik%3A%2C400%2C700%2C900%7CRoboto%3A%2C700%2C400%2C900%7CRoboto%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CRubik%3A400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Rubik%3A%2C400%2C700%2C900%7CRoboto%3A%2C700%2C400%2C900%7CRoboto%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CRubik%3A400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap"
+        media="all">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__left">
+                    <div class="header__logo">
+                        <img src="./images/white-logo.png" alt="" class="header__img">
+                    </div>
+                    <div class="header__categories">
+                        <button class="btn header__btn"><i class="fa fa-th"></i> Categories</button>
+                        <div class="dropdown">
+                            <div class="dropdown__item">
+                                <a class="dropdown__link" href="#">Art & Design</a>
+                            </div>
+                            <div class="dropdown__item">
+                                <a class="dropdown__link" href="#">Architecture</a>
+                            </div>
+                            <div class="dropdown__item">
+                                <a class="dropdown__link" href="#">Business Study</a>
+                            </div>
+                            <div class="dropdown__item">
+                                <a class="dropdown__link" href="#">Computer Science</a>
+                            </div>
+                            <div class="dropdown__item">
+                                <a class="dropdown__link" href="#">Web Development</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="header__input" placeholder="Search">
+                    </div>
+                    <nav class="header__navbar">
+                        <ul class="header__menu">
+                            <li class="header__item drop active">
+                                <a href="#" class="header__link">Home<i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Art & Design</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Architecture</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Business Study</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Computer Science</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Web Development</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">About</a>
+                            </li>
+                            <li class="header__item drop">
+                                <a href="#" class="header__link">Course<i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Art & Design</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Architecture</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Business Study</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Computer Science</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Web Development</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__item drop">
+                                <a href="#" class="header__link">Pages<i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Art & Design</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Architecture</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Business Study</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Computer Science</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Web Development</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__item drop">
+                                <a href="#" class="header__link">Blog<i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Art & Design</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Architecture</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Business Study</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Computer Science</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a class="dropdown__link" href="#">Web Development</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <i class="fa fa-user header__icon user"></i>
+                    <i class="fa fa-shopping-cart header__icon cart"><sup>0</sup></i>
+                    <i class="fa fa-bars header__toggle"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__content">
+                <h1 class="banner__heading">We Take Learning to New Heights</h1>
+                <p class="banner__desc">We believe everyone has the capacity to be creative. Turitor is a place where
+                    people develop their own potential.</p>
+                <a class="banner__button banner__get btn"><i class="fa fa-plus"></i> GET A QUOTE</a>
+                <a class="banner__button banner__start btn"><i class="fa fa-user-plus"></i> START TRIAL</a>
+            </div>
+            <div class="banner__animate">
+                <div class="banner__item banner__item--1">
+                    <img src="./images/image1-min.png" alt="" class="banner__img--1">
+                </div>
+                <div class="banner__item banner__item--3">
+                    <img src="./images/image3-min.png" alt="" class="banner__img--3">
+                </div>
+                <div class="banner__item banner__item--4">
+                    <img src="./images/image4-min.png" alt="" class="banner__img--4">
+                </div>
+                <div class="banner__item banner__item--5">
+                    <img src="./images/image5-min.png" alt="" class="banner__img--5">
+                </div>
+                <div class="banner__item banner__item--6">
+                    <img src="./images/image6-min.png" alt="" class="banner__img--6">
+                </div>
+                <div class="banner__item banner__item--7">
+                    <img src="./images/image7-min.png" alt="" class="banner__img--7">
+                </div>
+                <div class="banner__item banner__item--8">
+                    <img src="./images/image8-min.png" alt="" class="banner__img--8">
+                </div>
+                <div class="banner__item banner__item--9">
+                    <img src="./images/image9-min.png" alt="" class="banner__img--9">
+                </div>
+                <div class="banner__item banner__item--10">
+                    <img src="./images/image10-min.png" alt="" class="banner__img--10">
+                </div>
+                <div class="banner__item banner__item--11">
+                    <img src="./images/image11-min.png" alt="" class="banner__img--11">
+                </div>
+                <div class="banner__item banner__item--12">
+                    <img src="./images/image12-min.png" alt="" class="banner__img--12">
+                </div>
+                <div class="banner__item banner__item--13">
+                    <img src="./images/image13-min.png" alt="" class="banner__img--13">
+                </div>
+                <div class="banner__item banner__item--14">
+                    <img src="./images/image14-min.png" alt="" class="banner__img--14">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="course">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__content">
+                    <div class="intro__item">
+                        <p class="intro__title">#Top categories</p>
+                        <p class="intro__topic">Popular Subjects</p>
+                    </div>
+                    <div class="intro__item">
+                        <p>
+                            Online learning offers a new way to explore subjects you’re passionate about.
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="intro__button"><i class="fa fa-eye"></i> View All</a>
+            </div>
+            <div class="course__content">
+                <div class="course__item">
+                    <img src="./images/subject_icon1.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Computer Science</a>
+                    <p class="course__num">1 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon2.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Web Development</a>
+                    <p class="course__num">1 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon3.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Data Science</a>
+                    <p class="course__num">1 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon4.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Engineering</a>
+                    <p class="course__num">1 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon5.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Architecture</a>
+                    <p class="course__num">2 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon6.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Art & Design</a>
+                    <p class="course__num">1 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon8.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Business Study</a>
+                    <p class="course__num">1 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="course__item">
+                    <img src="./images/subject_icon5.png" alt="" class="course__img">
+                    <a href="#" class="course__job">Psychology</a>
+                    <p class="course__num">6 Course</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 80 79"
+                        class="course__dot"
+                        src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        alt="shape image"
+                        data-lazy-src="https://demo.themewinter.com/wp/turitors/wp-content/themes/turitor/assets/images/dot_shape.svg"
+                        data-ll-status="loaded">
+                        <title>dot_shape</title>
+                        <path
+                            d="M68.78,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,0Zm9.6,3.25a1.63,1.63,0,1,0-1.63-1.63A1.63,1.63,0,0,0,78.38,3.25Zm-9.6,5.17A1.63,1.63,0,1,0,70.41,10,1.62,1.62,0,0,0,68.78,8.42Zm9.6,0A1.63,1.63,0,1,0,80,10,1.62,1.62,0,0,0,78.38,8.42Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,16.83Zm9.6,0A1.63,1.63,0,1,0,80,18.46,1.63,1.63,0,0,0,78.38,16.83Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,25.25Zm9.6,0A1.63,1.63,0,1,0,80,26.87,1.63,1.63,0,0,0,78.38,25.25Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,33.67Zm9.6,0A1.63,1.63,0,1,0,80,35.29,1.62,1.62,0,0,0,78.38,33.67Zm-9.6,8.41a1.63,1.63,0,1,0,1.63,1.63A1.63,1.63,0,0,0,68.78,42.08Zm9.6,0A1.63,1.63,0,1,0,80,43.71,1.63,1.63,0,0,0,78.38,42.08Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,50.5Zm9.6,0A1.63,1.63,0,1,0,80,52.12,1.63,1.63,0,0,0,78.38,50.5Zm-9.6,8.42a1.63,1.63,0,1,0,1.63,1.62A1.62,1.62,0,0,0,68.78,58.92Zm9.6,0A1.63,1.63,0,1,0,80,60.54,1.62,1.62,0,0,0,78.38,58.92ZM1.62,67.33A1.63,1.63,0,1,0,3.25,69,1.63,1.63,0,0,0,1.62,67.33Zm9.6,0A1.63,1.63,0,1,0,12.84,69,1.63,1.63,0,0,0,11.22,67.33Zm9.59,0A1.63,1.63,0,1,0,22.44,69,1.63,1.63,0,0,0,20.81,67.33Zm9.6,0A1.63,1.63,0,1,0,32,69,1.63,1.63,0,0,0,30.41,67.33Zm9.59,0A1.63,1.63,0,1,0,41.62,69,1.62,1.62,0,0,0,40,67.33Zm9.59,0A1.63,1.63,0,1,0,51.22,69,1.63,1.63,0,0,0,49.59,67.33Zm9.6,0a1.63,1.63,0,1,0,0,3.25,1.63,1.63,0,0,0,0-3.25Zm9.59,0A1.63,1.63,0,1,0,70.41,69,1.63,1.63,0,0,0,68.78,67.33Zm9.6,0A1.63,1.63,0,1,0,80,69,1.63,1.63,0,0,0,78.38,67.33ZM1.62,75.75a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,1.62,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,11.22,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,20.81,75.75Zm9.6,0A1.63,1.63,0,1,0,32,77.37,1.63,1.63,0,0,0,30.41,75.75Zm9.59,0a1.63,1.63,0,1,0,1.62,1.62A1.62,1.62,0,0,0,40,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,49.59,75.75Zm9.6,0a1.63,1.63,0,1,0,1.62,1.62A1.63,1.63,0,0,0,59.19,75.75Zm9.59,0a1.63,1.63,0,1,0,1.63,1.62A1.63,1.63,0,0,0,68.78,75.75Zm9.6,0A1.63,1.63,0,1,0,80,77.37,1.63,1.63,0,0,0,78.38,75.75Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__content">
+                    <div class="intro__item">
+                        <p class="intro__title">#Top Courses</p>
+                        <p class="intro__topic">Featured Courses</p>
+                    </div>
+                    <div class="intro__item">
+                        <p>
+                            Online learning offers a new way to explore subjects you’re passionate about.
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="intro__button"><i class="fa fa-eye"></i> View All</a>
+            </div>
+            <div class="feature__search">
+                <ul class="feature__menu">
+                    <li class="feature__filter">All</li>
+                    <li class="feature__filter">Computer Science</li>
+                    <li class="feature__filter">Web development</li>
+                    <li class="feature__filter">Data Science</li>
+                    <li class="feature__filter">Engineering</li>
+                    <li class="feature__filter">Architecture</li>
+                </ul>
+            </div>
+            <div class="feature__course">
+                <div class="feature__item">
+                    <a href="#" class="feature__category">Web development</a>
+                    <a href="#" class="feature__title">Making Music with Other People</a>
+                    <div class="feature__area">
+                        <div class="feature__top">
+                            <div class="feature__icon"><i class="fa fa-file"></i> 10 Lessons</div>
+                            <div class="feature__icon"><i class="fa fa-user-friends"></i> 0</div>
+                        </div>
+                        <div class="feature__bottom">
+                            <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                            <span>acuraInte</span>
+                        </div>
+                    </div>
+                    <img src="./images/course_image1.png" alt="" class="feature__img">
+                    <div class="feature__hidden">
+                        <div class="feature__left">
+                            <div class="feature__star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>1 votes</span>
+                        </div>
+                        <div class="feature__price">$5.50</div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <a href="#" class="feature__category">Engineering</a>
+                    <a href="#" class="feature__title">Antiquities Trafficking and Art Crime</a>
+                    <div class="feature__area">
+                        <div class="feature__top">
+                            <div class="feature__icon"><i class="fa fa-file"></i> 20 Lessons</div>
+                            <div class="feature__icon"><i class="fa fa-user-friends"></i> 0</div>
+                        </div>
+                        <div class="feature__bottom">
+                            <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                            <a href="#">acuraInte</a>
+                        </div>
+                    </div>
+                    <img src="./images/course_image2.png" alt="" class="feature__img">
+                    <div class="feature__hidden">
+                        <div class="feature__left">
+                            <div class="feature__star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>1 votes</span>
+                        </div>
+                        <div class="feature__price">$5.50</div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <a href="#" class="feature__category">Computer Science</a>
+                    <a href="#" class="feature__title">Using Creative Problem Solving</a>
+                    <div class="feature__area">
+                        <div class="feature__top">
+                            <div class="feature__icon"><i class="fa fa-file"></i> 10 Lessons</div>
+                            <div class="feature__icon"><i class="fa fa-user-friends"></i> 50</div>
+                        </div>
+                        <div class="feature__bottom">
+                            <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                            <span>acuraInte</span>
+                        </div>
+                    </div>
+                    <img src="./images/course_image3.png" alt="" class="feature__img">
+                    <div class="feature__hidden">
+                        <div class="feature__left">
+                            <div class="feature__star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>1 votes</span>
+                        </div>
+                        <div class="feature__price">$5.50</div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <a href="#" class="feature__category">Data Science</a>
+                    <a href="#" class="feature__title">Inside Opera: Why Does It Matter?</a>
+                    <div class="feature__area">
+                        <div class="feature__top">
+                            <div class="feature__icon"><i class="fa fa-file"></i> 10 Lessons</div>
+                            <div class="feature__icon"><i class="fa fa-user-friends"></i> 15</div>
+                        </div>
+                        <div class="feature__bottom">
+                            <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                            <span>acuraInte</span>
+                        </div>
+                    </div>
+                    <img src="./images/course_image4.png" alt="" class="feature__img">
+                    <div class="feature__hidden">
+                        <div class="feature__left">
+                            <div class="feature__star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>1 votes</span>
+                        </div>
+                        <div class="feature__price">$5.50</div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <a href="#" class="feature__category">Architecture</a>
+                    <a href="#" class="feature__title">The Power of Podcast for Storytelling</a>
+                    <div class="feature__area">
+                        <div class="feature__top">
+                            <div class="feature__icon"><i class="fa fa-file"></i> 10 Lessons</div>
+                            <div class="feature__icon"><i class="fa fa-user-friends"></i> 30</div>
+                        </div>
+                        <div class="feature__bottom">
+                            <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                            <span>acuraInte</span>
+                        </div>
+                    </div>
+                    <img src="./images/course_image5.png" alt="" class="feature__img">
+                    <div class="feature__hidden">
+                        <div class="feature__left">
+                            <div class="feature__star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>1 votes</span>
+                        </div>
+                        <div class="feature__price">$5.50</div>
+                    </div>
+                </div>
+                <div class="feature__item">
+                    <a href="#" class="feature__category">Business Study</a>
+                    <a href="#" class="feature__title">Fashion and Luxury Fashion in a Changing</a>
+                    <div class="feature__area">
+                        <div class="feature__top">
+                            <div class="feature__icon"><i class="fa fa-file"></i> 10 Lessons</div>
+                            <div class="feature__icon"><i class="fa fa-user-friends"></i> 0</div>
+                        </div>
+                        <div class="feature__bottom">
+                            <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                            <span>acuraInte</span>
+                        </div>
+                    </div>
+                    <img src="./images/course_image6.png" alt="" class="feature__img">
+                    <div class="feature__hidden">
+                        <div class="feature__left">
+                            <div class="feature__star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>1 votes</span>
+                        </div>
+                        <div class="feature__price">$5.50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__header">
+                <div class="intro">
+                    <div class="intro__content">
+                        <div class="intro__item">
+                            <p class="intro__title">#Testimonial</p>
+                            <p class="intro__topic">What Students Says</p>
+                        </div>
+                        <div class="intro__item">
+                            <p>
+                                Discover how to anticipate and adapt to the latest trends and digital
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__content">
+                <div class="feedback__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="feedback__top">
+                            <i class="fa fa-quote-left"></i>
+                            <p class="feedback__text">
+                                Using differe skills and behaviors People program enabled me to be a fuller me,...</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./images/author1.png" alt="" class="feedback__author">
+                            <div class="feedback__name">
+                                <p class="feedback__title">Blaise Matuidi</p>
+                                <p class="feedback__designation">Research Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <i class="fa fa-quote-left"></i>
+                            <p class="feedback__text">
+                                Using differe skills and behaviors People program enabled me to be a fuller me,...</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./images/author1.png" alt="" class="feedback__author">
+                            <div class="feedback__name">
+                                <p class="feedback__title">Blaise Matuidi</p>
+                                <p class="feedback__designation">Research Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <i class="fa fa-quote-left"></i>
+                            <p class="feedback__text">
+                                Using differe skills and behaviors People program enabled me to be a fuller me,...</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./images/author1.png" alt="" class="feedback__author">
+                            <div class="feedback__name">
+                                <p class="feedback__title">Blaise Matuidi</p>
+                                <p class="feedback__designation">Research Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__top">
+                            <i class="fa fa-quote-left"></i>
+                            <p class="feedback__text">
+                                Using differe skills and behaviors People program enabled me to be a fuller me,...</p>
+                        </div>
+                        <div class="feedback__bottom">
+                            <img src="./images/author1.png" alt="" class="feedback__author">
+                            <div class="feedback__name">
+                                <p class="feedback__title">Blaise Matuidi</p>
+                                <p class="feedback__designation">Research Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="instructor">
+        <div class="container">
+            <div class="instructor__header">
+                <div class="intro">
+                    <div class="intro__content">
+                        <div class="intro__item">
+                            <p class="intro__title">#Testimonial</p>
+                            <p class="intro__topic">What Students Says</p>
+                        </div>
+                        <div class="intro__item">
+                            <p>
+                                Discover how to anticipate and adapt to the latest trends and digital
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instructor__carousel owl-carousel owl-theme">
+                <div class="instructor__item item">
+                    <div class="instructor__avatar">
+                        <img src="./images/bd233f31611a0bbb30e04c9fd9ea2493.png" alt="">
+                    </div>
+                    <div class="instructor__info">
+                        <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                        <p class="instructor__desc">Professor</p>
+                    </div>
+                    <div class="instructor__overlay">
+                        <img src="./images/bd233f31611a0bbb30e04c9fd9ea2493.png" alt="">
+                        <div class="instructor__text">
+                            <div class="instructor__info">
+                                <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                                <p class="instructor__desc">Professor</p>
+                            </div>
+                            <div class="instructor__social">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor__item item">
+                    <div class="instructor__avatar">
+                        <img src="./images/bd233f31611a0bbb30e04c9fd9ea2493.png" alt="">
+                    </div>
+                    <div class="instructor__info">
+                        <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                        <p class="instructor__desc">Professor</p>
+                    </div>
+                    <div class="instructor__overlay">
+                        <img src="./images/bd233f31611a0bbb30e04c9fd9ea2493.png" alt="">
+                        <div class="instructor__text">
+                            <div class="instructor__info">
+                                <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                                <p class="instructor__desc">Professor</p>
+                            </div>
+                            <div class="instructor__social">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor__item item">
+                    <div class="instructor__avatar">
+                        <img src="./images/66ac99bcb2f49331067e931de0dba35f.png" alt="">
+                    </div>
+                    <div class="instructor__info">
+                        <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                        <p class="instructor__desc">Professor</p>
+                    </div>
+                    <div class="instructor__overlay">
+                        <img src="./images/bd233f31611a0bbb30e04c9fd9ea2493.png" alt="">
+                        <div class="instructor__text">
+                            <div class="instructor__info">
+                                <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                                <p class="instructor__desc">Professor</p>
+                            </div>
+                            <div class="instructor__social">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor__item item">
+                    <div class="instructor__avatar">
+                        <img src="./images/1e1192523581e43184f90442797d8f14.png" alt="">
+                    </div>
+                    <div class="instructor__info">
+                        <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                        <p class="instructor__desc">Professor</p>
+                    </div>
+                    <div class="instructor__overlay">
+                        <img src="./images/1e1192523581e43184f90442797d8f14.png" alt="">
+                        <div class="instructor__text">
+                            <div class="instructor__info">
+                                <a class="instructor__name" href="#">Yolanda Ruiz</a>
+                                <p class="instructor__desc">Professor</p>
+                            </div>
+                            <div class="instructor__social">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

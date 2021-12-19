@@ -1,0 +1,8 @@
+.banner{
+    &__content{
+        text-align: center;
+    }
+    &__heading{
+        @include fontSize(64px, $black);
+    }
+}

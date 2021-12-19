@@ -1,0 +1,12 @@
+.feature{
+    &__list{
+        display: flex;
+        justify-content: center;
+    }
+    &__menu{
+        list-style-type: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+}

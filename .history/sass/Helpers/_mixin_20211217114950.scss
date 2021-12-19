@@ -1,0 +1,17 @@
+@mixin button($px, $py, $fz, $color, $bg, $bdr){
+    padding: $py $px;
+    font-size: $fz;
+    color: $color;
+    background-color: $bg;
+    border-radius: $bdr;
+}
+@mixin background-color($bg, $color) {
+    background-color: $bg;
+    color: $color;
+}
+
+@mixin fontSize($fz, $color, $fw:"nomal"){
+    color: $color;
+    font-size: $fz;
+    font-weight: $fw;
+}

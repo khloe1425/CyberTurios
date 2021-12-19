@@ -1,0 +1,8 @@
+.intro{
+    display: flex;
+    align-items: center;
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+}
