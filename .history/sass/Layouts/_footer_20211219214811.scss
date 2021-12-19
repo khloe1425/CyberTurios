@@ -1,0 +1,54 @@
+.footer {
+  background-color: $secondary;
+  &__top {
+    background-color: $primary;
+    background-image: url("../../images/newsletter_bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 75px 65px;
+    border-radius: 20px;
+    color: $white;
+    &--title {
+      font-size: 42px;
+      font-family: "Roboto";
+    }
+    &--text,
+    &--contact {
+      flex: 1;
+    }
+  }
+  &__button {
+    height: 70px;
+    max-width: 476px;
+    border-radius: 40px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 0 35px;
+      border-radius: 40px;
+      background-color: $secondary;
+      color: $white;
+      border: none;
+      color: 14px;
+    }
+  }
+  &__input {
+    border: none;
+    margin: 20px;
+    height: 20px;
+    width: 100%;
+    &::placeholder {
+      font-size: 14px;
+      color: $gray-2;
+    }
+  }
+}

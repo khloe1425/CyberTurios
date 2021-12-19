@@ -1,0 +1,23 @@
+.about {
+  background-color: #f2fefb;
+  &__content {
+    display: flex;
+  }
+  &__item {
+    flex: 1;
+    display: flex;
+  }
+  &__left {
+    border-right: 1px solid $gray-3;
+    padding-right: 50px;
+  }
+  &__right {
+    padding-left: 50px;
+  }
+  &__img {
+    flex: 4;
+  }
+  &__text {
+    flex: 7;
+  }
+}

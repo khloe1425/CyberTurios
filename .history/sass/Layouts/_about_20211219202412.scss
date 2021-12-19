@@ -1,0 +1,11 @@
+.about {
+  &__content {
+    display: flex;
+  }
+  &__item {
+    flex: 1;
+  }
+  &__left {
+    border-right: 1px solid $gray-3;
+  }
+}

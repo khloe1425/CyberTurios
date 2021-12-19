@@ -1,0 +1,36 @@
+.footer {
+  background-color: $secondary;
+  &__top {
+    background-color: $primary;
+    background-image: url("../../images/newsletter_bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 75px 65px;
+    border-radius: 20px;
+    color: $white;
+    &--title {
+      font-size: 42px;
+      font-family: "Roboto";
+    }
+    &--text,
+    &--contact {
+      flex: 1;
+    }
+  }
+  &__button {
+    height: 70px;
+    max-width: 476px;
+    border-radius: 40px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    button {
+      height: 70px;
+      max-width: 170px;
+      border-radius: 40px;
+      background-color: $secondary;
+    }
+  }
+}
